@@ -8,9 +8,3 @@ def test_01_today_prayer_times():
     print(response_body)
     assert status_code == 200
 
-
-@allure.step('get tomorrow prayer times')
-def test_02_today_prayer_times():
-    response_body, status_code = response_get_times_tomorrow()
-    print(response_body)
-    assert status_code == 200
